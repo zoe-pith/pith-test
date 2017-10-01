@@ -1,3 +1,6 @@
+---
+layout: default
+---
 {% include header.md %}
 					<section class="strip" id="about">
 						{% include about.md %}
