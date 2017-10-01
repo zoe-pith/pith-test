@@ -111,6 +111,10 @@ header{
 	padding: 0;
 }
 
+#menu {
+	margin-bottom:1.7em;
+}
+
 .tito-wrapper {
 		margin-bottom:30px;
 }
