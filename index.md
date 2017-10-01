@@ -1,17 +1,17 @@
 ---
 layout: default
 ---
-{% include_relative header.md %}
+{% include_relative sections/header.md %}
 					<section class="strip" id="about">
-						{% include_relative about.md %}
+						{% include_relative sections/about.md %}
 					</section>
 					<section class="strip" id="tickets">
-						{% include_relative tickets.md %}
+						{% include_relative sections/tickets.md %}
 					</section>
 					<section class="strip" id="projects">
-						{% include_relative projects.md %}
+						{% include_relative sections/projects.md %}
 					</section>
 					<section class="strip" id="contact">
-						{% include_relative contact.md %}
+						{% include_relative sections/contact.md %}
 					</section>
-{% include_relative footer.md %}
+{% include_relative sections/footer.md %}
