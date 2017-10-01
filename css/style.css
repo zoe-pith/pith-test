@@ -287,8 +287,11 @@ li span {
 			backface-visibility: hidden;
 		}
 
-		#content, #content_wrapper {
+		body, html, #content, #content_wrapper {
 			-webkit-overflow-scrolling: touch;
+		}
+
+		#content, #content_wrapper {
 			display:auto;
 			height:100%;
 			left:0;
