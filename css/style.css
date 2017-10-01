@@ -287,8 +287,8 @@ li span {
 			backface-visibility: hidden;
 		}
 
-		body, html, #content, #content_wrapper {
-			-webkit-overflow-scrolling: touch;
+		body, html {
+			-webkit-overflow-scrolling: auto;
 		}
 
 		#content, #content_wrapper {
@@ -297,7 +297,7 @@ li span {
 			left:0;
 			overflow-y:scroll;
 			overflow-x:hidden;
-			position:fixed;
+			position:absolute;
 			top:0;
 			width:100%;
 		}
