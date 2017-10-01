@@ -159,6 +159,10 @@ header{
 	line-height: 1.6em;
 }
 
+.tito-ticket-price-quantity-wrapper {
+	float: right;
+}
+
 input {
 	width:25px;
 	height:18px;
