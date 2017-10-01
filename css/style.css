@@ -303,13 +303,11 @@ li span {
 			display:auto;
 			height:100%;
 			left:0;
-			overflow:hidden;
+			overflow-y:scroll;
+			overflow-x:hidden;
 			position:absolute;
 			top:0;
 			width:100%;
-		}
-		#content {
-			overflow-y:scroll;
 		}
 		header{
 			background: url("../media/images/Pith_PITH.jpg") 30px 30px/150px no-repeat,
