@@ -3,6 +3,8 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width">
+		<meta name="keywords" content="Pith, Jonah Reider, supper club">
+  	<meta name="author" content="Jonah Reider">
 		<title>Pith – Jonah Reider</title>
 		<link rel="shortcut icon" type="image/png" href="media/images/favicon.png"/>
 		<link rel="stylesheet" type="text/css" href="css/style.css">
