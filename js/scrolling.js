@@ -3,7 +3,8 @@ $(document).ready(function () {
 
 		var scroll_length = 525;
 		var arrow_fade_speed = 300;
-
+		// 0 - left arrow visible, 1 - right arrow visible
+		var visible_arrow = true;
 		var swap_arrow_left = function() {
 			$("#arrow").animate({opacity: 0}, arrow_fade_speed, function() {
 				$("#arrow").css({"right": "auto", "left": "10px", "border-left": "none", "border-right": "15px solid black"});
@@ -12,6 +13,7 @@ $(document).ready(function () {
 					$("#arrow").click(left_handler);
 				});
 			});
+			visible_arrow = false;
 		}
 
 		var swap_arrow_right = function() {
@@ -20,13 +22,12 @@ $(document).ready(function () {
 				$("#arrow").animate({opacity: 1}, arrow_fade_speed, function() {
 					$("#arrow").off();
 					$("#arrow").click(right_handler);
-					clicked = false;
 				});
 			});
+			visible_arrow = true;
 		}
 
 		var right_handler = function() {
-			clicked = true;
 			$("#content").animate({
 		      scrollLeft: scroll_length
 		  }, 1600, "easeOutCubic", function() {
@@ -35,7 +36,6 @@ $(document).ready(function () {
 		}
 
 		var left_handler = function() {
-			clicked = true;
 			$("#content").animate({
 		      scrollLeft: 0
 		  }, 1600, "easeOutCubic", function() {
@@ -43,9 +43,9 @@ $(document).ready(function () {
 		}
 
 		$("#content").scroll(function() {
-			if($("#content").scrollLeft() == $("#content").prop("scrollWidth") - 850) {
+			if($("#content").scrollLeft() == $("#content").prop("scrollWidth") - 850 && visible_arrow) {
 				swap_arrow_left();
-			} else if($("#content").scrollLeft() == 0) {
+			} else if($("#content").scrollLeft() == 0 && !visible_arrow) {
 				swap_arrow_right();
 			}
 		});
