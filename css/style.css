@@ -88,22 +88,27 @@ header{
 		font-weight:normal;
 	}
 
-.in_column {
+#contact_section img {
 	margin-bottom:40px;
 	width:295px;
 }
 
-#about {
+#about_section {
 	margin-left:20px;
 }
 
-	#about a {
+	#about_section a {
 		font-style: italic;
 		text-decoration: none;
 	}
 
-#contact {
+#contact_section {
 	padding-right:20px;
+}
+
+#contact_section p:nth-of-type(2) {
+	margin: 0 0 -20px 0;
+	padding: 0;
 }
 
 .tito-wrapper {
@@ -185,7 +190,7 @@ li span {
 	width:100%;
 }
 
-#right_gradient {
+/*#right_gradient {
 	background: -moz-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,0.5) 42%, rgba(255,255,255,1) 100%);
 	background: -webkit-linear-gradient(left, rgba(255,255,255,0) 0%,rgba(255,255,255,0.5) 42%,rgba(255,255,255,1) 100%);
 	background: linear-gradient(to right, rgba(255,255,255,0) 0%,rgba(255,255,255,0.5) 42%,rgba(255,255,255,1) 100%);
@@ -195,7 +200,7 @@ li span {
 	right: 0;
 	top: 208px;
 	width: 52px;
-}
+}*/
 
 #arrow {
 	border-top: 15px solid transparent;
@@ -326,11 +331,11 @@ li span {
 			max-width:100%;
 		}
 
-		#bottom_gradient, #right_gradient {
+		#bottom_gradient {
 			display:none;
 		}
 
-		#about {
+		#about_section {
 			margin:0;
 		}
 
